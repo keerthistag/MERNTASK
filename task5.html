@@ -3,126 +3,87 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML TASK_5</title>
+    <title>CSS TASK_5</title>
     <style>
+      div.container {
+        display: flex;
+        justify-content: space-between;
+        width: 32%;
+        margin: 0 auto;
+        padding-top: 100px;
+        text-align: left;
+        padding: 2em;
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 200px; /* Add padding to extend the square slightly down */
+        font-family: Georgia, "Times New Roman", Times, serif;
+        color: purple;
+        background-color: #d8da3d;
+        border-top: 1px dotted purple;
+        border-left: 1px dotted purple;
+        border-right: 1px dotted purple;
+      }
+
+      ul.navbar {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        margin-right: 20px;
+        margin-top: 30px;
+        text-align: left; /* Align list items to the left */
+        width: 14em;
+      }
       h1 {
+        font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif;
+      }
+      ul.navbar li {
+        background: white;
+        margin: 0.5em 0;
+        padding: 0.3em;
+        border-right: 1em solid black;
+      }
+      ul.navbar a {
+        text-decoration: none;
+      }
+      a:visited {
         color: blue;
-        text-align: center;
       }
-      table {
-        border: 1px solid black;
-        margin-left: auto;
-        margin-right: auto;
+      a:hover {
+        color: purple;
       }
-      th {
-        border-right: 1px solid black;
-      }
-      th,
-      td {
-        border-bottom: 1px solid black;
-      }
-      td {
-        width: 80%;
-      }
-      input[type="text"],
-      input[type="email"],
-      input[type="password"],
-      input[type="number"],
-      textarea,
-      select {
-        width: 100%;
-        box-sizing: border-box;
-      }
-      .center {
-        text-align: center;
+      address {
+        margin-top: 1em;
+        padding-top: 1em;
+        border-top: thin dotted;
       }
     </style>
   </head>
-
   <body>
-    <h1>Registration Form</h1>
-    <form>
-      <table>
-        <tr>
-          <th>First Name</th>
-          <td><input type="text" /></td>
-        </tr>
-        <tr>
-          <th>Last Name</th>
-          <td><input type="text" /></td>
-        </tr>
-        <tr>
-          <th>Email</th>
-          <td><input type="email" /></td>
-        </tr>
-        <tr>
-          <th>Password</th>
-          <td><input type="password" /></td>
-        </tr>
-        <tr>
-          <th>Re-enter Password</th>
-          <td><input type="password" /></td>
-        </tr>
-        <tr>
-          <th rowspan="2">Gender:</th>
-          <td><input id="male" name="gender" type="radio" />Male</td>
-        </tr>
-        <tr>
-          <td><input id="female" name="gender" type="radio" />Female</td>
-        </tr>
-        <tr>
-          <th>Age:</th>
-          <td><input type="number" /></td>
-        </tr>
-        <tr>
-          <th>Phone Number</th>
-          <td><input type="number" /></td>
-        </tr>
-        <tr>
-          <th>Address</th>
-          <td><textarea rows="5" cols="20"></textarea></td>
-        </tr>
-        <tr>
-          <th>State</th>
-          <td><input type="text" /></td>
-        </tr>
-        <tr>
-          <th>Country</th>
-          <td>
-            <select>
-              <option value="" disabled selected>Choose your country</option>
-              <option value="us">United States</option>
-              <option value="ca">India</option>
-              <option value="uk">United Kingdom</option>
-            </select>
-          </td>
-        </tr>
-        <tr>
-          <th>Languages known</th>
-          <td>
-            <input type="checkbox" />English<input
-              type="checkbox"
-            />Kannada<input type="checkbox" />Hindi<input
-              type="checkbox"
-            />Telugu
-          </td>
-        </tr>
-        <tr>
-          <td colspan="2">
-            <input type="checkbox" /> Hereby I declare all the given details are
-            true
-          </td>
-        </tr>
-        <tr>
-          <td colspan="2" style="text-align: right">
-            Login in to <a href="https://ethnus.com/">Ethnus</a> website
-          </td>
-        </tr>
-      </table>
-      <br />
-      <div class="center">
-        <input type="submit" value="Register" />
+    <div class="container">
+      <ul class="navbar">
+        <li><a href="">Home page</a></li>
+        <li><a href="">Musings</a></li>
+        <li><a href="">My town</a></li>
+        <li><a href="">Links</a></li>
+      </ul>
+
+      <div class="content">
+        <h1>My first styled page</h1>
+
+        <p>Welcome to my styled page!</p>
+
+        <p>
+          It lacks images, but at least it has style. And it has links, even if
+          they don't go anywhere&hellip;
+        </p>
+
+        <p>There should be more here, but I don't know what yet.</p>
+
+        <address>
+          Made 5 April 2004<br />
+          by myself.
+        </address>
       </div>
-    </form>
+    </div>
   </body>
 </html>
